@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Registration</title>
+</head>
+<body>
+    <div class="row justify-content-center">
+    <div class="card" style="width: 28rem;">
+        <div class="card-body">
+            <h3 class="card-title mb-3 row justify-content-center">Registration Form</h5>
+            <form name="myform" onsubmit="return(validate());">
+            <div class="mb-3 row">
+                <label for="staticEmail" class="col-sm-4 col-form-label">ID</label>
+                <div class="col-sm-8">
+                <input type="number" class="form-control" name="inputID" value="">
+                </div>
+            </div>
+
+            <div class="mb-3 row alert-danger" id="IDErr"></div>
+
+            <div class="mb-3 row">
+                <label for="inputName" class="col-sm-4 col-form-label">First Name</label>
+                <div class="col-sm-8">
+                <input type="text" class="form-control" name="inputName">
+                </div>
+            </div>
+
+            <div class="mb-3 row alert-danger" id="FirstNameErr"></div>
+
+            <div class="mb-3 row">
+                <label for="inputSurname" class="col-sm-4 col-form-label">Last Name</label>
+                <div class="col-sm-8">
+                <input type="text" class="form-control" name="inputSurname" value="">
+                </div>
+            </div>
+
+            <div class="mb-3 row alert-danger" id="SurnameErr"></div>
+
+            <div class="mb-3 row" ng-app="">
+                <label for="inputAddress" class="col-sm-4 col-form-label">Address</label>
+                <div class="col-sm-8">
+                <input type="text" class="form-control" id="inputAddress" ng-model="inputAddress" required>
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <label for="inputDpt" class="col-sm-4 col-form-label">Department</label>
+                <div class="col-sm-8">
+                <input type="text" class="form-control" name="inputDpt" value="">
+                </div>
+            </div>
+
+            <div class="mb-3 row alert-danger" id="DepartmentErr"></div>
+
+            <div class="mb-3 row" ng-app="">
+                <label for="inputPstn" class="col-sm-4 col-form-label">Position</label>
+                <div class="col-sm-8">
+                <input type="text" class="form-control" id="inputPstn" ng-model="inputPosition" required>
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <label for="inputEmail" class="col-sm-4 col-form-label">Email</label>
+                <div class="col-sm-8">
+                <input type="email" class="form-control" name="inputEmail">
+                </div>
+            </div>
+
+            <div class="mb-3 row alert-danger" id="EmailErr"></div>
+
+            <div class="mb-3 row">
+                <label for="inputCtn" class="col-sm-4 col-form-label">Contact No.</label>
+                <div class="col-sm-8">
+                <input type="number" class="form-control" name="inputCtn">
+                </div>
+            </div>
+
+            <div class="mb-3 row alert-danger" id="CtnErr"></div>
+
+            <div class="mb-3 row">
+                <label for="staticEmail" class="col-sm-4 col-form-label">Salary</label>
+                <div class="col-sm-8">
+                <input type="number" class="form-control" name="inputSalary"/>
+                </div>
+            </div>
+
+            <div class="mb-3 row alert-danger" id="SalaryErr"></div>
+
+            <div class="mb-3 row">
+                <label for="staticEmail" class="col-sm-4 col-form-label">Username</label>
+                <div class="col-sm-8">
+                <input type="text" class="form-control" name="inputUsername"/>
+                </div>
+            </div>
+
+            <div class="mb-3 row alert-danger" id="UsernameErr"></div>
+
+            <div class="mb-3 row justify-content-center">
+                <input type="submit" class="col-sm-10 btn btn-primary" value="Register">
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+<script src="validation.js"></script>
+</html>
